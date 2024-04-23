@@ -111,15 +111,15 @@ namespace TooManyEmotes.Config
             disableRaritySystem = AddConfigEntry("Emote Store", "DisableRaritySystem", false, "[Host only] If true, every emote will have the same likelyhood of appearing in the emote store.");
             basePriceEmoteRaritySystemDisabled = AddConfigEntry("Emote Store", "BasePriceEmote - Rarity System Disabled", 100, "[Host only] Base price of emotes if the rarity system is disabled.");
 
-            startingEmoteCredits = AddConfigEntry("Emote Store", "StartingEmoteCredits", 100, "[Host only] The number of emote credits you start each game with.");
+            startingEmoteCredits = AddConfigEntry("Emote Store", "StartingEmoteCredits", 1000000, "[Host only] The number of emote credits you start each game with.");
             addEmoteCreditsMultiplier = AddConfigEntry("Emote Store", "AddEmoteCreditsMultiplier", 0.3333f, "[Host only] You gain emote credits based off this multiplier of normal group credits earned. Example: If set to the default, 0.25, and you earn 200 group credits, you will also gain 50 emote credits.");
             purchaseEmotesWithDefaultCurrency = AddConfigEntry("Emote Store", "PurchaseEmotesWithDefaultCredits", true, "[Host only] Setting this to true will allow you to purchase emotes with normal group credits once you run out of emote credits. NOTE: This setting will automatically be disabled if ShareEverything is false.");
 
             priceMultiplierEmotesStore = AddConfigEntry("Emote Store", "PriceMultiplierEmotesStore", 1.0f, "[Host only] Price multiplier for emotes in the store. Only applies if UnlockEverythingAtStart is false.");
-            basePriceEmoteTier0 = AddConfigEntry("Emote Store", "PriceCommonEmote", 50, "[Host only] The base price of [common]emotes in the store.");
-            basePriceEmoteTier1 = AddConfigEntry("Emote Store", "PriceRareEmote", 100, "[Host only] The base price of [rare] emotes in the store.");
-            basePriceEmoteTier2 = AddConfigEntry("Emote Store", "PriceEpicEmote", 200, "[Host only] The base price of [epic] emotes in the store.");
-            basePriceEmoteTier3 = AddConfigEntry("Emote Store", "PriceLegendaryEmote", 300, "[Host only] The base price of [legendary] emotes in the store.");
+            basePriceEmoteTier0 = AddConfigEntry("Emote Store", "PriceCommonEmote", 10, "[Host only] The base price of [common]emotes in the store.");
+            basePriceEmoteTier1 = AddConfigEntry("Emote Store", "PriceRareEmote", 10, "[Host only] The base price of [rare] emotes in the store.");
+            basePriceEmoteTier2 = AddConfigEntry("Emote Store", "PriceEpicEmote", 10, "[Host only] The base price of [epic] emotes in the store.");
+            basePriceEmoteTier3 = AddConfigEntry("Emote Store", "PriceLegendaryEmote", 10, "[Host only] The base price of [legendary] emotes in the store.");
 
             numEmotesStoreRotation = AddConfigEntry("Emote Store", "EmotesInStoreRotation", 6, "[Host only] The number of emotes that will be available at a time in the store. Only applies if UnlockEverythingAtStart is false.");
             rotationChanceEmoteTier0 = AddConfigEntry("Emote Store", "RotationWeightCommonEmote", 0.5f, "[Host only] The likelyhood of [common] emotes appearing (per slot) in the store rotation.");
